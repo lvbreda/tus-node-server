@@ -1,3 +1,19 @@
+.idea
+.eslintcache
+dist
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.env
+.env.sh
+
 # Logs
 logs
 *.log
@@ -29,13 +45,12 @@ node_modules
 
 # Example local FileStore
 example/files
-files/
+test/output
 
 #OSX
 .DS_Store
 
 *.sublime-workspace
 
-# Keyfile will be decrypted from keyfile.json.enc by travis
-# https://docs.travis-ci.com/user/encrypting-files/
+# Keyfile will be decrypted from keyfile.json.enc by GitHub Actions
 keyfile.json
