@@ -49,7 +49,8 @@ class BaseHandler extends node_events_1.default {
         }
         host ?? (host = req.headers.host);
         proto ?? (proto = 'http');
-        return `${proto}://${host}${baseUrl}${path}/${id}`;
+        //We force https
+        return `https://${host}${baseUrl}${path}/${id}`;
     }
     getFileIdFromRequest(req) {
         const match = reExtractFileID.exec(req.url);
