@@ -18,6 +18,7 @@ export const HEADERS = [
   'X-Forwarded-Host',
   'X-Forwarded-Proto',
   'Forwarded',
+  'Evenito-Space-Id',
 ] as const
 
 export const HEADERS_LOWERCASE = HEADERS.map((header) => {
@@ -83,7 +84,7 @@ export const POST_CREATE = 'POST_CREATE' as const
 export const POST_RECEIVE = 'POST_RECEIVE' as const
 export const POST_FINISH = 'POST_FINISH' as const
 export const POST_TERMINATE = 'POST_TERMINATE' as const
-export const EVENTS = {POST_CREATE, POST_RECEIVE, POST_FINISH, POST_TERMINATE} as const
+export const EVENTS = { POST_CREATE, POST_RECEIVE, POST_FINISH, POST_TERMINATE } as const
 
 export const MAX_AGE = 86_400 as const
 export const TUS_RESUMABLE = '1.0.0' as const
