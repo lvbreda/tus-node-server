@@ -20,6 +20,7 @@ exports.HEADERS = [
     'X-Forwarded-Host',
     'X-Forwarded-Proto',
     'Forwarded',
+    'Evenito-Space-Id',
 ];
 exports.HEADERS_LOWERCASE = exports.HEADERS.map((header) => {
     return header.toLowerCase();
