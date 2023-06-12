@@ -1,4 +1,4 @@
-import {HEADERS_LOWERCASE, TUS_VERSION, TUS_RESUMABLE} from '../constants'
+import { HEADERS_LOWERCASE, TUS_VERSION, TUS_RESUMABLE } from '../constants'
 
 export const RequestValidator = {
   // All PATCH requests MUST include a Upload-Offset header
@@ -70,6 +70,10 @@ export const RequestValidator = {
   },
 
   _invalidAuthorizationHeader() {
+    return false
+  },
+
+  _invalidEvenitoSpaceIdHeader() {
     return false
   },
 

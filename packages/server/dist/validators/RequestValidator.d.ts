@@ -13,6 +13,7 @@ export declare const RequestValidator: {
     _invalidXHttpMethodOverrideHeader(): boolean;
     _invalidContentTypeHeader(value: string | undefined): boolean;
     _invalidAuthorizationHeader(): boolean;
+    _invalidEvenitoSpaceIdHeader(): boolean;
     _invalidUploadConcatHeader(value: string): boolean;
     capitalizeHeader(header_name: string): string;
     isInvalidHeader(header_name: string, header_value: string | undefined): boolean;

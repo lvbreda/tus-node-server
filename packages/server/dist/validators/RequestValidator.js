@@ -59,6 +59,9 @@ exports.RequestValidator = {
     _invalidAuthorizationHeader() {
         return false;
     },
+    _invalidEvenitoSpaceIdHeader() {
+        return false;
+    },
     _invalidUploadConcatHeader(value) {
         const valid_partial = value === 'partial';
         const valid_final = value.startsWith('final;');
